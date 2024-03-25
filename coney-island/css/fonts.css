@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'pacificoregular';
+    src: url('../fonts/Pacifico-webfont.eot');
+    src: url('../fonts/Pacifico-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Pacifico-webfont.woff2') format('woff2'),
+         url('../fonts/Pacifico-webfont.woff') format('woff'),
+         url('../fonts/Pacifico-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'futura_ltregular';
+    src: url('../fonts/FuturaLT-webfont.eot');
+    src: url('../fonts/FuturaLT-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/FuturaLT-webfont.woff2') format('woff2'),
+         url('../fonts/FuturaLT-webfont.woff') format('woff'),
+         url('../fonts/FuturaLT-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'futura_ltbold';
+    src: url('../fonts/FuturaLT-Bold-webfont.eot');
+    src: url('../fonts/FuturaLT-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/FuturaLT-Bold-webfont.woff2') format('woff2'),
+         url('../fonts/FuturaLT-Bold-webfont.woff') format('woff'),
+         url('../fonts/FuturaLT-Bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'futura_ltoblique';
+    src: url('../fonts/FuturaLT-Oblique-webfont.eot');
+    src: url('../fonts/FuturaLT-Oblique-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/FuturaLT-Oblique-webfont.woff2') format('woff2'),
+         url('../fonts/FuturaLT-Oblique-webfont.woff') format('woff'),
+         url('../fonts/FuturaLT-Oblique-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'futura_ltbook';
+    src: url('../fonts/FuturaLT-Book-webfont.eot');
+    src: url('../fonts/FuturaLT-Book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/FuturaLT-Book-webfont.woff2') format('woff2'),
+         url('../fonts/FuturaLT-Book-webfont.woff') format('woff'),
+         url('../fonts/FuturaLT-Book-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'futura_ltlight';
+    src: url('../fonts/FuturaLT-Light-webfont.eot');
+    src: url('../fonts/FuturaLT-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/FuturaLT-Light-webfont.woff2') format('woff2'),
+         url('../fonts/FuturaLT-Light-webfont.woff') format('woff'),
+         url('../fonts/FuturaLT-Light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'futura_ltheavy';
+    src: url('../fonts/FuturaLT-Heavy-webfont.eot');
+    src: url('../fonts/FuturaLT-Heavy-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/FuturaLT-Heavy-webfont.woff2') format('woff2'),
+         url('../fonts/FuturaLT-Heavy-webfont.woff') format('woff'),
+         url('../fonts/FuturaLT-Heavy-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}

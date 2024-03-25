@@ -1,0 +1,1039 @@
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+h2{font-family: 'futura_ltheavy';}
+
+a{text-decoration:none;}
+a:hover{text-decoration:none;}
+
+.slicknav_menu{display:none;}
+
+.bottom-line{
+border-bottom: 4px solid #fff;
+height: 2px;
+position: relative;
+text-align: center;
+width: 70px;
+}
+
+.bottom-line-2{
+border-bottom: 4px solid #f05661;
+height: 2px;
+position: relative;
+text-align: center;
+width: 70px;
+}
+
+.bottom-line-3{
+border-bottom: 4px solid #fff;
+height: 2px;
+margin-left: 115px;
+width: 70px;
+}
+
+.stick {
+background: none repeat scroll 0 0 #fff;
+border-bottom: 2px solid #f05661;
+min-height: 150px;
+position: fixed;
+top: 0;
+width: 100%;
+z-index: 999999;
+padding-top: 10px;
+}
+
+
+
+/*start header design*/
+.header_area{border-bottom:7px solid #00b3c5;padding-top: 20px;padding-bottom: 10px;}
+.logo{margin-bottom:10px;}
+.logo img{width: 200px;}
+
+.icon{}
+
+.search_box{
+float: left;
+margin-bottom:10px;
+}
+.search_box input{
+ font-family: "futura_ltheavy";
+background: none repeat scroll 0 0 #f7f7f7;
+border: medium none;
+color: #9c9b9b;
+padding: 10px;
+width: 250px;
+}
+.search-submit {
+    width: 80px !important;
+}
+.search_box i{
+background: #F7F7F7;
+color: #b0b0b0;
+font-size: 16px;
+padding: 10px;
+margin-left: -5px;
+cursor: pointer;
+border-left:1px solid #ddd;
+}
+
+.icon{overflow: hidden;}
+.icon a i{
+color: #B0B0B0;
+}
+
+.icon a {
+color: #666;
+float: left;
+font-size: 18px;
+margin-right: 0px;
+margin-left: 20px;
+font-family: 'futura_ltregular';
+  margin-top: 5px;
+}
+
+.mainmenu{margin-top: 40px;}
+.mainmenu ul{margin:0;padding:0;list-style:none}
+.mainmenu ul li{float:left;}
+
+.mainmenu ul li a{
+text-transform: uppercase;
+color: #f05661;
+display: block;
+font-size: 22px;
+font-weight: bold;
+margin-right: 25px;
+text-decoration: none;
+font-family: 'futura_ltheavy';
+ padding: 0 0 5px !important;
+}
+
+.mainmenu ul li a:hover{
+border-bottom:3px solid #F05661;background-color: unset;
+}
+
+/*End header design*/
+
+
+
+/* start slider design */
+
+/*.slider_area{
+background: url(../img/slider.jpg) no-repeat scroll center center / cover;
+border-bottom:7px solid #00B3C5;
+min-height:450px;
+}*/
+.another_slider_area {
+  height: 535px;
+}
+
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev {
+  font-size: 100px;
+  color: #f05661;
+}
+
+.top-right-section {}
+
+.top-right-section a{
+background: none repeat scroll 0 0 #F05661;
+color: #fff;
+padding: 10px 20px;
+text-decoration: none;
+text-transform: uppercase;}
+.bttn{}
+
+.title{
+color: #d95153;
+font-size: 55px;
+margin-top: 90px;
+font-family: 'pacificoregular';
+}
+.title_two{
+font-size: 35px;
+line-height:60px;
+font-family: 'futura_ltregular';
+color:#fff;
+}
+.text-center {
+  text-align: center;
+}
+.top-right-section {
+    top: 50px;
+}
+.slider_area {
+   /* background: rgba(0, 0, 0, 0) url(".http://coney-island.causepopuliclient.info/wp-content/uploads/2015/04/slider.jpg") no-repeat scroll center center / cover ;*/
+    border-bottom: 7px solid #00b3c5;
+    min-height: 450px;
+}
+
+.btn-transparent,.submit {
+border-color: #f05661;
+color: #fff;
+text-transform: uppercase;
+font-weight: bold;
+background: #F05661;
+font-family: 'futura_ltheavy';
+}
+.btn-transparent:hover,
+.btn-transparent:focus {
+background: none repeat scroll 0 0 #f05661;
+color: #FFF;
+-webkit-box-shadow: none;
+box-shadow: none;
+}
+.carousel-control.left {
+  background:none
+}
+.carousel-control.right {
+  background:none
+}
+
+/* End slider design*/
+
+
+
+/*start visit design*/
+.visit_area{padding:20px 0;}
+
+.visit_img{}
+.visit_img img{
+margin-top: 22px;
+z-index: 999;
+position: relative;
+left:10px;
+}
+.visit_img_2 img{
+marign-top:-12px;
+width: 520px;
+}
+
+.visit_content{}
+.visit_content h2{
+font-family: "futura_ltheavy";
+color: #f05661;
+font-weight: bold;
+font-size: 28px;
+}
+.visit_content p{
+color: #666666;
+font-size: 18px;
+line-height: 26px;
+text-align: justify;
+
+font-family: 'futura_ltbook';
+
+}
+.visit_content p span{color: #04B4C6;}
+
+.button{
+color: #fff;
+text-transform: uppercase;
+padding: 10px 35px;
+border: none;
+background: #F05661;
+font-weight: bold;
+font-family: 'futura_ltheavy';
+}
+.button:hover{opacity:0.9}
+/*End visit design*/
+
+
+/*start explore design*/
+
+
+.explore{}
+.explore h1{
+font-weight: bold;
+text-align: center;
+text-transform: uppercase;
+padding-top: 40px;
+font-family: 'futura_ltheavy';
+}
+
+.explore_one img{
+/*background: url("../img/explore-1.jpg") no-repeat scroll center top / cover  rgba(0,240, 86, 97);*/
+border-radius: 500px;
+height: 280px;
+width: 280px;
+margin-left:30px;
+}
+
+.explore_one h2,.explore_two h2,.explore_three h2{
+    font-size:30px;
+    bottom: 202px;
+    font-family: "futura_ltregular";
+    position: relative;
+    text-align: center;
+    z-index: 999;
+	 right: 10px;
+}
+.explore_one h2 a{color:white;}
+.explore_two{
+border-radius: 500px;
+background: url(../img/explore-2.jpg) no-repeat scroll center top / cover  rgba(0,240, 86, 97);
+background-position: top center;
+background-size: cover;
+width: 280px;
+height: 280px;
+margin-left:30px;
+}
+.explore_three{
+border-radius: 500px;
+background: url(../img/explore-3.jpg) no-repeat scroll center top / cover  rgba(0,240, 86, 97);
+background-position: top center;
+background-size: cover;
+width: 280px;
+height: 280px;
+margin-left:30px;
+margin-bottom:20px;
+}
+
+
+/*End explore design*/
+
+
+/*start explore design two*/
+
+.explore_area_two{
+background:#F0F0F0;
+padding:50px 0;
+}
+
+.explore_title{
+color: #F05661;
+font-weight: bold;
+text-align: center;
+font-size: 28px;
+margin-bottom: 40px;
+ font-family: 'futura_ltheavy';
+}
+
+.upcoming_event{
+margin-left: 10px;
+margin-bottom: 25px;
+}
+
+.upcoming_event h4{
+color: #666;
+font-weight: bold;
+ font-family: 'futura_ltbold';
+}
+.upcoming_event h4:hover{color:#F0656F;}
+
+.upcoming_event h6{color:#666;font-family: 'futura_ltbook';}
+.upcoming_event h6 strong{color:#666;}
+
+.initerary_builder{
+background: url("../img/map.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+color: #fff;
+height: 400px;
+text-align: center;
+background-position: center;
+}
+.initerary_builder p{
+padding-top: 60px;
+font-size: 20px;
+font-weight: bold;
+font-family: 'futura_ltbold';
+}
+.initerary_builder h5{
+font-size: 22px;
+font-weight: bold;
+margin: 55px 0;
+font-family: 'futura_ltbold';
+}
+
+/*End explore design two*/
+
+
+
+/*start promotion design*/
+
+
+
+.promotion_title{}
+.promotion_title h1{
+text-align: center;
+color: #fff;
+font-weight: bold;
+text-transform: uppercase;
+margin:40px 0;
+font-family: 'futura_ltheavy';
+}
+
+.single_promotion{
+background: none repeat scroll 0 0 #f05661;
+border-radius: 500px;
+color: #fff;
+height: 300px;
+margin-bottom: 20px;
+margin-left: 30px;
+width: 300px;
+}
+
+.single_promotion img{
+height: 150px;
+width: 150px;
+margin-top: 65px;
+}
+
+.single_promotion h2{
+color:#fff;
+font-weight: bold;
+text-transform: uppercase;
+margin-top:150px;
+font-family: 'futura_ltregular';
+}
+
+/*End promotion design*/
+
+/*start announcement design*/
+.announcement_area{background:#F0F0F0;}
+
+.announcement_title{}
+.announcement_title h1{
+text-align: center;
+color: #F05661;
+font-weight: bold;
+text-transform: uppercase;
+margin:40px 0;
+font-family: 'futura_ltheavy';
+}
+
+.single_announcement{margin-bottom:30px;}
+.single_announcement img{
+width: 340px;
+margin-bottom:20px;
+}
+.single_announcement p{
+color: #a6a6a6;
+font-size: 12px;
+font-family: 'futura_ltregular';
+}
+.single_announcement h3{color: #F05661;font-family: 'futura_ltbook';}
+.single_announcement h5{
+color: #666666;
+font-size: 17px;
+line-height: 22px;
+margin-bottom:25px;
+font-family: 'futura_ltbook';
+}
+
+/*End announcement design*/
+
+
+/*start partner design*/
+
+.partner_area{margin:30px 0;}
+.partner {}
+
+.item img {
+width: 170px;
+height:170px;
+margin-right: 5px;
+display: block;
+}
+
+/*End partner design*/
+
+.carousel_area{margin:30px 0;}
+
+
+/*start footer top design*/
+.footer_top_area{
+background: url("../img/footer_top_bg.jpg") no-repeat scroll center center / cover  rgba(0, 0, 0, 0);
+min-height: 400px;
+padding: 30px 0;
+color: #fff;
+font-weight: bold;
+font-family: 'futura_ltheavy';
+}
+
+.single_widget h1{
+
+}
+.single_widget{margin-top:30px;}
+.single_widget ul {margin:0;padding:0;list-style:none}
+.single_widget ul li{}
+.single_widget ul li a{
+display:block;
+color:#fff;
+padding:5px;
+text-decoration:none;
+font-family: 'futura_ltbook';
+}
+.single_widget ul li a:hover{}
+
+.single_widget img{}
+.single_widget p{
+color: #fff;
+font-weight: bold;
+line-height: 26px;
+font-family: 'futura_ltregular';
+}
+.single_widget input{margin-bottom: 10px;padding: 10px;width: 330px;font-family: 'futura_ltregular';}
+/*End footer top design*/
+/*start footer_bootom design*/
+
+.footer_bottom_area{background:#EF6961;color:#fff;}
+.footer_left{}
+.footer_left p {margin-top: 20px;font-size: 16px;font-family: 'futura_ltregular';}
+.footer_right{margin-left: 200px;margin-top: 15px;}
+.footer_right p{float: left;margin-right: 20px;font-size: 16px;font-family: 'futura_ltregular';}
+.footer_right img{}
+#menu-footer_menu > li {float: unset;}
+.single_widget ul li a:hover {background-color: unset;}
+.navbar-right {  float: unset !important;}
+#nsu-form-0 label{display:none;}
+#nsu-submit-0{background: none repeat scroll 0 0 #f05661;border: medium none;color: #fff;font-family: "futura_ltheavy";font-weight: bold;padding: 10px 35px;text-transform: uppercase;}
+#nsu-submit-0:hover {opacity: 0.9;}
+.mainmenu > li.current-menu-item > a {border-bottom: 3px solid #f05661;}
+#awesome-weather-new-york-ny{left: 30px;position: relative;top: -20px;}
+.awesome-weather-header{float:left;}
+.awesome-weather-current-temp{ float: left;left: 10px;position: relative;}
+#events-widget-3 ol li a{   color: #666;font-family: "futura_ltbold";
+    font-size: 18px;
+    font-weight: bold;}
+#events-widget-3 ol li {list-style:none;padding-bottom: 20px;}
+
+
+/* start footer social media tab design*/
+.testimonial_list{width:305px;}
+.testimonial_content{background: #fff;padding: 5px;}
+.testimonial_author_list ul{margin:0;padding:0;list-style:none;}
+.testimonial_author_list ul li{float:left;position:relative}
+
+.testimonial_author_list ul li a {display: block;
+font-size: 20px;
+padding: 10px 40px;
+border-right: 1px solid #ddd;background:#F0F0F0;}
+
+.testimonial_author_list ul li a img{width:19px;}
+.testimonial_author_list {position:relative}
+
+.tab-pane{}
+.tab-pane h6{
+border-right: 1px solid #ddd;
+color: #E70C47;
+font-size: 18px;
+font-style: normal;
+padding: 10px 0;
+text-align: left;
+}
+.tab-pane img{float:left;width:70px}
+.tab-pane p{text-align: left;margin-left: 100px;margin-bottom: 30px;color:#666;font-style: normal;font-size: 14px;line-height: 24px;}
+.tab-pane p strong{color:#000;font-style: normal;font-size: 15px;}
+.tab-pane p span{color:#E70C47;font-size: 14px;font-style: normal;font-size: 16px;}
+
+/* End footer social media tab design*/
+#example {width: 360px;background: #e74c3c;padding: 10px;margin: 0 20px 20px 0;}
+.button a{color:#fff;}
+/*End footer_bootom design*/
+
+.entry-title { color: #f05661; font-family: "futura_ltheavy"; text-align: center; text-transform: uppercase; margin-bottom: 40px; margin-top: 35px;font-size: 24px;}
+.about-employment{ clear: both;padding-top: 80px;}
+.press-media{ clear: both; float: left;padding-bottom: 50px;padding-top: 70px;}
+.press-media h2{color: #f05661;font-family: "futura_ltheavy";font-size: 28px;font-weight: bold;margin-bottom: 40px;text-align: center;text-transform: uppercase;}
+.about-employment img{height: auto;width: 380px;}
+.about-employment h2{   color: #969696;font-size: 24px;margin-bottom: 20px;text-align: center;text-transform: uppercase;font-family: "futura_ltheavy";font-size:22px;}
+.btn-center{margin-top: 30px;text-align: center;}
+.press-left {box-shadow: 0 0 5px;padding: 0 0 20px;margin-left: 60px;width: 40%;}
+.press-left h3{background: #f1f1f1 none repeat scroll 0 0;color: #7e7e7e;margin: 0;padding: 15px;text-align: center;text-transform: uppercase;font-family: "futura_ltheavy";font-size:22px;}
+.press-left  p{margin: 0; padding: 20px 20px 0;color: #666;/*font-family: "futura_ltheavy";*/}
+
+/*Cpntact page*/
+.wpcf7-form{  background: #f8f8f8 none repeat scroll 0 0;padding: 20px 0 10px;}
+.wpcf7-form > p {padding-left: 30px;padding-right: 30px;}
+input.wpcf7-form-control, textarea.wpcf7-form-control {border: 0 solid #f8f8f8;line-height: normal;margin-top: 5px;padding: 10px;width: 100%;}
+.wpcf7-submit{background: #f05661 none repeat scroll 0 0;color: #fff; padding: 10px 20px!important;text-decoration: none;  font-size: 16px;  border-color: #f05661;    font-family: "futura_ltheavy";  width: auto !important;}
+.contact-block{padding-left: 50px;}
+.contact-block h3{color: #888888;font-family: "futura_ltheavy";font-size: 19px;font-weight: bold;}
+.contact-block ul{ margin-top: 40px;padding: 0 !important;} 
+.contact-block ul li img {margin-right: 20px;}
+.contact-block ul li{ list-style: outside none none;margin-top: 10px !important;}
+.contact-block ul li:first-child{color: #3b5998;font-family: "futura_ltheavy";font-size: 24px; font-weight: bold;}
+.contact-block ul li:last-child{color: #517fa4;font-family: "futura_ltheavy";font-size: 24px; font-weight: bold;}
+li.twitter{color: #00aced;font-family: "futura_ltheavy";font-size: 24px; font-weight: bold;}
+
+/*News page*/
+.content-right{padding-left:40px;}
+.news-box {clear: both;margin-bottom: 40px;}
+.news-box img{width:100%;}
+.news-box h1{font-size:24px;color:#f05661;font-family: "futura_ltheavy";}
+.news-box p{font-family:font-family: "futura_ltheavy";}
+.post-box{  /*background: #ededed none repeat scroll 0 0;*/float: left; padding: 5px; width: 100%;}
+.post-box li:first-child{padding-left: 30px;}
+.post-box li { float: left;list-style: outside none none;padding-left: 115px;}
+.widget-title {background: #ededed none repeat scroll 0 0;color: #000 !important;font-size: 20px !important;margin: 0 0 20px !important;padding: 10px;text-transform: capitalize !important;}
+.widget_categories ul{margin-bottom: 10px;margin-top: 0;}
+.widget_categories ul li {border-bottom: medium dotted #666;list-style: outside none none;margin-bottom: 10px; padding-bottom: 15px;}
+.widget_categories ul li a::before {content: "> ";}
+.widget_categories ul li a{font-size:18px; color: #666666;}
+.text-2{margin-top: 40px;}
+.text-2 img{border: 8px solid #f7f7f7;padding: 0;width: 335px;}
+.textwidget span{ color: #f05661;float: left;}
+.comment-form-comment > textarea {width: 100%;}
+code,#form-allowed-tags {display: none;}
+.submit {border: medium none;border-radius: 5px;padding: 10px;}
+
+/*Get here*/
+.app-box { box-shadow: 0 0 5px;height: 535px;margin-left: 60px;padding: 0 0 20px; width: 25%;}
+.app-box h3{background: #f1f1f1 none repeat scroll 0 0; color: #7e7e7e;margin: 0; padding: 20px;text-align: center;text-transform: uppercase;font-size:22px; font-family: "futura_ltheavy";}
+.app-box img{width:100%; height:auto;} 
+.app-box h6{ font-size: 13px; padding: 20px; color: #666;font-family: "futura_ltheavy";}
+
+/*food drink*/
+.graph { position: relative; top: -300px;clear: both;}
+.graph h1{ color: #fff;font-family: "futura_ltheavy";line-height: 130%;text-align: center;text-transform: uppercase}
+.graph p{color: #fff;font-family: "futura_ltheavy";}
+#portfolio .folio-item {
+  position: relative;
+}
+
+#portfolio .overlay {
+  background-color: #000;
+  color: #fff; 
+  left: 0;
+  right:0;
+  bottom:-100%;
+  height: 0;
+  position: absolute;
+  text-align: center;
+  opacity:0;  
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.overlay .overlay-content {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.overlay .overlay-text {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.overlay .folio-info {
+  opacity: 0;
+  margin-bottom: 75px;
+  margin-top: -75px;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.overlay .folio-info h4 {
+  margin-top: 0;
+  color: #fff;
+  font-size:16px;
+  font-family: "futura_ltheavy";
+}
+
+.folio-overview a {
+  font-size: 40px;
+  color: #fff;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+
+
+.folio-overview .folio-expand {
+  margin-top: -500px;
+  margin-left: -500px;
+}
+
+.folio-image, .folio-overview .folio-expand {
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+
+
+.folio-image img {
+  width: 100%;
+  height:230px !important;
+}
+.folio-image h3 {
+font-family: "futura_ltheavy";
+background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+color: #fff;
+font-size: 18px;
+    height: 60px;
+    margin-top: -60px;
+    padding: 15px 0;
+position: relative;
+text-align: center;
+text-transform: uppercase;
+z-index: 999;
+
+}
+
+#portfolio .folio-item:hover .overlay {
+  opacity: 0.8;
+  bottom: 0;
+  height: 100%;
+  background:#36C2D2;
+}
+
+#portfolio .folio-item:hover .folio-overview .folio-expand {
+  margin-top: 0;
+  margin-left:0;
+}
+
+#portfolio .folio-item:hover .overlay .folio-info {
+  opacity: 1;  
+  margin-bottom:0;
+  margin-top:0;
+}
+.alm-btn-wrap { overflow: visible!important;clear: both;}
+.fa-plus {float: left;margin-left: -15px;display:none;}
+.food-box:nth-child(3n+1) {clear: both;}
+.food-box {margin-bottom: 20px;}
+.event-box img{}
+.event-box span{ 
+    word-spacing: 15px;
+    color: #000 !important;
+    float: left;
+    font-family: "futura_ltheavy";
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 15px;
+    text-align: center;
+    width: 20%;
+	text-transform: uppercase;
+}
+.event-box h2{  color: #000;
+    float: left;
+    font-family: "futura_ltheavy";
+    width: 80%;
+	text-transform: uppercase;
+	  font-size: 22px;
+}
+.event-box > p {
+    margin-top: 10px;
+    background-color: #f7f5f5;
+    border-top: 3px solid #ff0000;
+    float: left;
+    padding: 10px;
+	width: 100%;
+}
+
+/* Events Plugin */
+.ai1ec-agenda-widget-view .ai1ec-month, .ai1ec-agenda-view .ai1ec-month { background: #666 none repeat scroll 0 0 !important;}
+.ai1ec-agenda-widget-view .ai1ec-event > a {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
+    border: medium none !important;
+    color: #666 !important;}
+#ai1ec_agenda_widget-2 h1, .ai1ec-allday-badge { display: none !important;}
+.ai1ec-event-title { 
+    font-size: 17px;
+    color: #666 !important;
+    font-family: "futura_ltbook" !important;
+    font-weight: bold !important;
+	padding-bottom: 25px;
+}
+.ai1ec-event-location {
+    font-size: 12px;
+    font-weight: normal;
+}
+.ai1ec-agenda-widget-view .ai1ec-date.ai1ec-today, .ai1ec-agenda-view .ai1ec-date.ai1ec-today { background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;}
+.timely .ai1ec-btn-xs {display:none !important;} /* view all events*/
+.ai1ec-agenda-widget-view .ai1ec-date, .ai1ec-agenda-view .ai1ec-date {
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important;
+    border-top: medium none !important;
+}
+.ai1ec-agenda-widget-view .ai1ec-event {padding-bottom: 10px;}
+
+.left-content-section > p {color: #666; font-family: "futura_ltheavy";}
+p.green-line{border-top: 3px solid #18bb9c;}
+p.red-line{  border-top: 3px solid #ff0000;}
+p.yellow-line{border-top: 3px solid #fdb244;}
+.elastislide-carousel ul li a img {width: 150px;padding: 0 10px;}
+.carousel-inner > .item {height:535px;}
+#text-3{display:none;}
+.event-box{height:410px;}
+#gmap_canvas{visibility:visible!important;}

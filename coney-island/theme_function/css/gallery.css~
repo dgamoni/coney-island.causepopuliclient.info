@@ -1,0 +1,20 @@
+
+.add_video{font-weight:bold !important;margin:0 0 10px 0 !important;padding:15px 0 0 0 ;}
+.video_form{float:left !important;}
+.iframe_text{width:374px;height:65px;}
+iframe{width:250px;height:250px;}
+.video_list{margin:0 0 10px 10px;float:left;}
+.video_list h2{border:1px solid #E2E2E2;text-align:center;background:#E2E2E2;}
+.error{color:red !important;}
+.search_1{float:right;}
+.add_video a{text-decoration:none;}
+.help_txt {
+border: 1px solid #CCCCCC;
+float: left;
+margin-top: 20px;
+padding: 10px;
+width: 700px;
+}
+.help_txt img {
+vertical-align:middle;
+}
