@@ -39,10 +39,28 @@ get_header(); ?>
 </div>
 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 content-right">
 						  <div class="folio-info">
-							<h4><?php echo get_field('address'); ?></h4>
-							<h4><?php echo get_field('phone_number'); ?></h4>
-								<h4><?php echo get_field('hours_operation'); ?></h4>
-							<h4><?php echo get_field('month_operation'); ?></h4>
+							  <?php 
+									$address = get_field('address');
+									$phone_number = get_field('phone_number');
+									$hours_operation = get_field('hours_operation');
+									$month_operation = get_field('month_operation');
+									$website_url = get_field('website_url');
+								if($address) {
+									echo '<h4>'.$address.'</h4>';
+								}
+								if($phone_number) {
+									echo '<h4>'.$phone_number.'</h4>';
+								}
+								if($hours_operation) {
+									echo '<h4>'.$hours_operation.'</h4>';
+								}
+								if($month_operation) {
+									echo '<h4>'.$month_operation.'</h4>';
+								}							
+								if($website_url) {
+									echo '<a class="website_url" href="'.$website_url.'" target="_blank">'.$website_url.'</a>';
+								}
+								?>
 						  </div>
 <p><?php the_content(); ?><?php //echo substr(strip_tags($post->post_content), 0, 300);?></p>
 

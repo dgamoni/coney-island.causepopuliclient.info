@@ -3593,6 +3593,14 @@ a.post-thumbnail:hover {
 	}
 }
 
+/*dgamoni*/
+.website_url {
+	font-size: 18px;
+/*    margin-top: 10px;
+    margin-bottom: 10px;*/
+    color: #333;
+}
+
 @media screen and (min-width: 1040px) {
 	.site-content .has-post-thumbnail .entry-header {
 		margin-top: -48px;
